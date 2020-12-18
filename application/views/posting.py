@@ -35,7 +35,7 @@ def initPost(db) :
             posting['title'] = data['title']
             posting['description'] = data['discription']
             posting['price'] = float(data['price'] ) 
-            posting['category'] = data['filter']
+            posting['category'] = data['postfilter']
 
             # Create thumbnails if user upload an image
             if file.filename != '' :       

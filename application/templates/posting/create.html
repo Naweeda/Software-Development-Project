@@ -14,7 +14,7 @@
                 <label class="col-sm-2 col-form-label">Choose a category</label>
                 <div class="col-sm-4">
                     <div class="form-check"></div>
-                        <select class="form-control" name="filter"   data-toggle="dropdown">
+                        <select class="form-control" name="postfilter"   data-toggle="dropdown">
                             {%if navlst%}
                             {% for n in navlst %}
                             <option class="dropdown-item" value ="{{n[0]}}" {%if category == n[0] %}selected{%endif%} >{{n[0]}} </option>
